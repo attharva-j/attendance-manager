@@ -1,0 +1,126 @@
+<html>
+ <head>
+  <title>Registration page</title>
+  <style>
+   body{
+        background-image: url("HD.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: helvetica, sans-serif;
+        font-size: 130%;
+       }
+
+   select {
+           font-size:120%;
+           width:25%;
+           padding:10px 10px;
+           margin: 10px 5px;
+           border:4px solid black;
+           border-radius: 5px;
+          }
+
+   .label {
+           font-size: 140%;
+           color: white;
+           width:200px;
+           margin:20px;
+           float:left;
+           font-family:helvetica;
+          }
+
+   .label1 {
+            font-size: 140%;
+            color: white;
+            width:200px;
+            margin:20px;
+            font-family:helvetica;
+           }
+
+   .input {
+           font-size:120%;
+           width:25%;
+           padding:10px 10px;
+           margin: 10px 5px;
+           border:4px solid black;
+           border-radius: 5px;
+           font-family:helvetica;
+          }
+
+.input1 {
+           font-size:120%;
+           width:25%;
+           padding:10px 10px;
+           margin: 10px 5px;
+           border:4px solid black;
+           border-radius: 5px;
+           font-family:helvetica;
+          }
+
+#submitBtn1 {
+           font-size:120%;
+           width:25%;
+           padding:10px 10px;
+           margin: 70px 110px;
+           border:4px solid black;
+           border-radius: 5px;
+           font-family:helvetica;
+          }
+  </style>
+ </head>
+ <body onload="document.getElementById('name').value=''; document.getElementById('rollno').value=''; document.getElementById('mno').value=''">
+
+  <form action="insert.php" method="post">
+
+  <label for="student" class="label1">Student</label>
+  <input type="radio" name="student" value="student" id="1" class="input">
+  <label for="student" class="label1">Teacher</label>
+  <input type="radio" name="student" value="teacher" id="2" class="input">
+
+
+
+  <br><br><br>
+
+  <label for="name" class="label">Name</label>
+  <input type="text" name="name" id="name" class="input" required>
+  <br>
+
+  <label for="department" class="label">Department</label>
+  <select name="dept">
+   <option value="comp">COMPUTER SCIENCE</option>
+   <option value="it">INFORMATION TECHNOLOGY</option>
+   <option value="elec">ELECTRICAL</option>
+   <option value="mech">MECHANICAL</option>
+   <option value="entc">ELECTRONICS</option>
+  </select>
+  <br>
+
+  <label for="class" name="class" class="label">Class</label>
+  <select name="class">
+   <option value="fea">First Year (A)</option>
+   <option value="feb">First Year (B)</option>
+   <option value="sea">Second Year (A)</option>
+   <option value="seb">Second Year (B)</option>
+   <option value="tea">Third Year (A)</option>
+   <option value="teb">Third Year (B)</option>
+   <option value="bea">Fourth Year (A)</option>
+   <option value="beb">Fourth Year (B)</option>
+  </select>
+  <br>
+
+  <label for="rollno" name="roll" class="label">Roll Number</label>
+  <input type="number" name="rollno" id="rollno" class="input" required>
+
+  <br>
+  <label for="mno" name="mno" class="label">Mobile Number</label>
+  <input type="number" pattern="[7-9]{1}][0-9]{9}" title="Phone number" name="mno" id="mno" class="input" required>
+  <br>
+
+  <label for="pwd" class="label">Password</label>
+  <input type="password" name="pwd" id="pwd" class="input" required>
+  <br>
+
+  <input type="submit" name="submitBtn" id="submitBtn1">
+
+  </form>
+ </body>
+</html>

@@ -1,0 +1,85 @@
+body{
+    background-image: url("bck.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: helvetica, sans-serif;
+    font-size: 130%;
+    color: white;
+
+}
+
+#login-div{
+    padding: 70px 70px;
+    width: 600px;
+    margin: 100px auto;
+    border: 3px solid white;
+    border-radius: 10px;
+
+}
+
+.form-element{
+
+    margin-bottom: 20px;
+
+}
+
+input{
+
+    padding: 8px 5px 12px 8px;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 320px;
+    transition: 0.5s;
+
+}
+
+label{
+
+    position: relative;
+    top: 15px;
+    width: 200px;
+    float: left;
+
+}
+
+#forgot{
+  font-size: 75%;
+  text-decoration: none;
+  color: white;
+}
+
+#forgot:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+#register{
+  font-size: 75%;
+  text-decoration: none;
+  color: white;
+}
+
+#register:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+#submitBtn{
+
+    position: relative;
+    top: 50px;
+    /*left: 145px;*/
+
+}
+
+footer {
+
+    font-family: monospace;
+    text-align: center;
+    /*font-size: 50%;*/
+    position: absolute;
+    top: 725px;
+    left: 575px;
+
+
+}
