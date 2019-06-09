@@ -2,7 +2,7 @@ body{
     background-image: url("bck.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: helvetica, sans-serif;
+    font-family: 'ABeeZee', sans-serif;
     font-size: 130%;
     color: white;
 
@@ -11,7 +11,7 @@ body{
 #login-div{
     padding: 70px 70px;
     width: 600px;
-    margin: 100px auto;
+    margin: 40px auto;
     border: 3px solid white;
     border-radius: 10px;
 
@@ -72,13 +72,34 @@ label{
 
 }
 
+#student{
+  width: 40px;
+}
+
+#student1{
+  position:relative;
+  top: 0px;
+  font-size: 75%;
+  float: left;
+}
+
+#teacher{
+  width: 40px;
+}
+
+#teacher1{
+  position:relative;
+  top: 0px;
+  font-size: 75%;
+}
+
 footer {
 
-    font-family: monospace;
+    font-family: 'B612 Mono',monospace;
     text-align: center;
-    /*font-size: 50%;*/
+    font-size: 75%;
     position: absolute;
-    top: 725px;
+    top: 710px;
     left: 575px;
 
 
